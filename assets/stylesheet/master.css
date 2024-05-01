@@ -1,83 +1,154 @@
 @font-face {
-    font-family: Courier;
-    src: url(../fonts/arial.ttf)format(truetype);
+  font-family: Courier;
+  src: url(../fonts/arial.ttf) format(truetype);
 }
-.menu-top{
+.menu-top {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  > img {
+    object-fit: cover;
     width: 100%;
-    height: 90px;
-    background-color: black;
-    >img{
-        object-fit: cover;
-        width: 100%;
-        height: 20%;
-    }
-    .row{
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        >*{
-            font-weight: bold;
-            color: #d8b89c;
-            font-size: 15px;
-            line-height: 60px;
-            cursor: pointer;
-            margin: 0 30px;
-            &:hover{
-                color: #F5A156;
-            }
-            >span{
-                font-size: 20px;
-                margin: 0 10px;
-            }
-        }
-    }
-}
-.header-fix{
-    background-color: black;
+    height: 20%;
+  }
+  .row {
     width: 100%;
-    height: 150vh;
-    position: relative;
+    height: 100%;
     justify-content: center;
-    >img{
-        width: 70%;
-        height: 70%;
-        position: fixed;
-        }
-.menu{
+    > * {
+      font-weight: bold;
+      color: #d8b89c;
+      font-size: 15px;
+      line-height: 60px;
+      cursor: pointer;
+      margin: 0 30px;
+      &:hover {
+        color: #f5a156;
+      }
+      > span {
+        font-size: 20px;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+.header-fix {
+  background-image: url(../img/hero-tattoo-bg-1.png);
+  background: radial-gradient(cir);
+  background-repeat: no-repeat;
+  background-color: black;
+  background-attachment: fixed;
+  background-position-x: 50%;
+  height: 200vh;
+  position: relative;
+  > .menu {
     width: 100%;
     height: 120px;
-    background-color: rgba(0, 0, 0, 0.425);
+    background-color: rgba(0, 0, 0, 0.719);
     border-top: 1px dashed rgb(85, 84, 84);
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
-    >img{
-        width: 300px;
-        object-fit: cover;
-        cursor: pointer;
+    > img {
+      width: 300px;
+      object-fit: cover;
+      cursor: pointer;
     }
-    >ul{
-        display: flex;
-        align-items: center;
-        >li{
-            margin: 0 25px;
-            >a{
-                font-weight: bold;
-                &:hover{
-                    color: #F5A156;
-                }
-            }
+    > ul {
+      display: flex;
+      align-items: center;
+      > li {
+        margin: 0 25px;
+        > a {
+          font-weight: bold;
+          &:hover {
+            color: #f5a156;
+          }
         }
+      }
     }
-    >a{
+    > a {
+      font-weight: bold;
+      padding: 25px 40px;
+      background: linear-gradient(
+        to right,
+        rgb(110, 49, 49),
+        rgb(151, 7, 7),
+        rgb(199, 10, 10)
+      );
+      &:hover {
+        background: linear-gradient(
+          to left,
+          rgb(110, 49, 49),
+          rgb(151, 7, 7),
+          rgb(199, 10, 10)
+        );
+      }
+    }
+  }
+  .header {
+    width: 100%;
+    height: 70%;
+    > div {
+      width: 50%;
+      height: 100%;
+      padding-top: 200px;
+      > * {
+        color: white;
+        padding-bottom: 80px;
+      }
+      > h1 {
+        font-size: 50px;
+        font-weight: bold;
+      }
+      h2 {
+        font-size: 20px;
+        line-height: 40px;
+      }
+      > a {
         font-weight: bold;
         padding: 25px 40px;
-        background: linear-gradient(to right,rgb(110, 49, 49),rgb(151, 7, 7),rgb(199, 10, 10));
-        &:hover{
-            background: linear-gradient(to left,rgb(110, 49, 49),rgb(151, 7, 7),rgb(199, 10, 10))
+        background: linear-gradient(
+          to right,
+          rgb(110, 49, 49),
+          rgb(151, 7, 7),
+          rgb(199, 10, 10)
+        );
+        &:hover {
+          background: linear-gradient(
+            to left,
+            rgb(110, 49, 49),
+            rgb(151, 7, 7),
+            rgb(199, 10, 10)
+          );
         }
+      }
     }
-}
+    > figure {
+      width: 50%;
+      height: fit-content;
+      justify-content: space-between;
+      > img {
+        width: 312px;
+        height: 350px;
+      }
+      > span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 160px;
+        color: #d8b89c;
+        cursor: pointer;
+        &:hover {
+          color: #c2451f;
+        }
+      }
+    }
+  }
+  > div {
+    width: 100%;
+    background-color: black;
+  }
 }
