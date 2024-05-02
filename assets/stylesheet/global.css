@@ -1,21 +1,23 @@
-*{
-    margin: 0;padding: 0;box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: Arial;
-    /* overflow-x: hidden; */
+body {
+  font-family: Arial;
+  overflow-x: hidden;
 }
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
-.container{
-    padding: 0 50px;
+.container {
+  padding: 0 50px;
 }
