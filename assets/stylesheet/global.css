@@ -3,6 +3,7 @@
 }
 body{
     font-family: Arial;
+    /* overflow-x: hidden; */
 }
 a{
     text-decoration: none;
