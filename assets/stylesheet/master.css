@@ -282,7 +282,87 @@
       font-size: 20px;
       border-top: 1px dashed rgb(196, 195, 195);
       border-bottom: 1px dashed rgb(196, 195, 195);
-      padding: 30px 0;
+      border-left: 5px solid #d8b89c;
+      padding: 30px 20px;
+      &:hover{
+        border-left: 5px solid#c2451f;
+      }
+    }
+  }
+}
+.border-img{
+  background-color: black;
+}
+.Stylish{
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/download\ \(1\).svg) , url(../img/dotted-bg-1.png);
+  background-color: #111111;
+  background-size: cover;
+  padding-top: 120px;
+  >*{
+    text-align: center;
+  }
+  >h4{
+    color: #d8b89c;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  >h2{
+    color: white;
+    font-weight: bold;
+    font-size: 45px;
+  }
+  >figure{
+    padding-top: 150px;
+    >img{
+      width: 25%;
+      height: 470px;
+    }
+    >div{
+      width: 25%;
+      height: 470px;
+      background-color: #101010;
+      padding: 40px 60px;
+      &:nth-of-type(1){
+      &:hover{
+        background-color: rgb(46, 44, 44);
+      }
+    }
+    &:nth-of-type(2){
+      &:hover{
+        background-color: rgb(87, 67, 67);
+      }
+    }
+    &:nth-of-type(3){
+      &:hover{
+        background-color: rgb(46, 44, 44);
+      }
+    }
+    &:nth-of-type(4){
+      &:hover{
+        background-color: rgb(87, 67, 67);
+      }
+    }
+      >*{
+        color: white;
+        padding-bottom: 30px;
+      }
+      >span{
+        color: #dfb590;
+        font-size: 80px;
+      }
+      >h2{
+        font-size: 30px;
+      }
+      >h4{
+        font-size: 15px;
+        padding-bottom: 100px;
+      }
+      >a{
+        padding: 25px 40px;
+        border: 2px solid rgb(180, 177, 177);
+      }
     }
   }
 }
