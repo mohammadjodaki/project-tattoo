@@ -362,7 +362,27 @@
       >a{
         padding: 25px 40px;
         border: 2px solid rgb(180, 177, 177);
+        position: relative;
+        color: white;
+        &:hover {
+          &::after {
+              clip-path: polygon(0 0, 150% 0, 100% 100%, 0 100%);
+              background-color: #672B20;
+          color: white;
+          }
+        }
+        &::after {
+          width: 100%;
+          height: 100%;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #672B20;
+          clip-path: polygon(0 0, 0 0, -50% 100%, 0 100%);
+          transition:0.4s;
       }
+    }
     }
   }
 }
