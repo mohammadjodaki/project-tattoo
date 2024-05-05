@@ -61,7 +61,7 @@
       align-items: center;
       > li {
         margin: 0 25px;
-        padding: 40px 0;
+            padding: 40px 0;
         > a {
           font-weight: bold;
           > i {
@@ -74,7 +74,7 @@
         }
         &:hover > ul {
           display: flex;
-          flex-wrap: wrap;
+            flex-wrap: wrap;
         }
         > ul {
           width: 400px;
@@ -82,7 +82,7 @@
           position: absolute;
           top: 100px;
           background-color: rgb(43, 43, 43);
-          display: none;
+            display: none;
           > li {
             width: 400px;
             height: 150px;
@@ -91,16 +91,27 @@
             align-items: center;
             position: relative;
             font-size: 30px;
+            padding: 10px;
             > a {
-              width: 100%;
+            width: 100%;
               height: 100%;
               color: white;
-            z-index: 999;
+              position: relative;
+              overflow: hidden;
               > img {
                 width: 100%;
                 height: 100%;
-                padding: 10px;
                 object-fit: cover;
+                transition: 0.6s;
+                position: absolute;
+                top: 0;
+                left: 0;
+                &:hover{
+                  width: 105%;
+                  left: -5%;
+                  height: 105%;
+                  top: -5%;
+                }
               }
             }
           }
@@ -324,6 +335,7 @@
       height: 470px;
       background-color: #101010;
       padding: 40px 60px;
+      transition:0.4s;
       &:nth-of-type(1){
       &:hover{
         background-color: rgb(46, 44, 44);
@@ -363,12 +375,10 @@
         padding: 25px 40px;
         border: 2px solid rgb(180, 177, 177);
         position: relative;
-        color: white;
         &:hover {
           &::after {
               clip-path: polygon(0 0, 150% 0, 100% 100%, 0 100%);
               background-color: #672B20;
-          color: white;
           }
         }
         &::after {
