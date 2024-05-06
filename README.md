@@ -1,7 +1,7 @@
 ﻿# project-tattoo
 **If you have a lot of information to display on your site, why don't you use my accordion menu**
 
-![viewfinal](https://s8.uupload.ir/files/screenshot_(85)_88q.png)
+![viewfinal](https://imgurl.ir/uploads/z17981_Screenshot_85.png)
 
 - [Demo Project](https://mohammadjodaki.github.io/project-tattoo/)
 
