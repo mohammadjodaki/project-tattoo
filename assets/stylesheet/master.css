@@ -61,7 +61,7 @@
       align-items: center;
       > li {
         margin: 0 25px;
-            padding: 40px 0;
+        padding: 40px 0;
         > a {
           font-weight: bold;
           > i {
@@ -74,7 +74,7 @@
         }
         &:hover > ul {
           display: flex;
-            flex-wrap: wrap;
+          flex-wrap: wrap;
         }
         > ul {
           width: 400px;
@@ -82,7 +82,7 @@
           position: absolute;
           top: 100px;
           background-color: rgb(43, 43, 43);
-            display: none;
+          display: none;
           > li {
             width: 400px;
             height: 150px;
@@ -93,7 +93,7 @@
             font-size: 30px;
             padding: 10px;
             > a {
-            width: 100%;
+              width: 100%;
               height: 100%;
               color: white;
               position: relative;
@@ -106,7 +106,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                &:hover{
+                &:hover {
                   width: 105%;
                   left: -5%;
                   height: 105%;
@@ -249,150 +249,159 @@
     }
   }
 }
-.Design{
+.Design {
   margin-top: 100px;
   width: 100%;
   height: 120vh;
-  >figure{
+  > figure {
     width: 50%;
     height: 100%;
     /* border: 1px solid red; */
     align-items: center;
     justify-content: space-between;
-    >img{
+    > img {
       width: 270px;
       height: 570px;
     }
   }
-  >div{
+  > div {
     width: 50%;
     height: 100%;
     /* border: 1px solid rgb(121, 19, 19); */
     padding: 100px 80px;
 
-    >*{
+    > * {
       padding-bottom: 30px;
     }
-    >h2{
+    > h2 {
       font-weight: bold;
       font-size: 40px;
     }
-    >h4{
+    > h4 {
       font-size: 17px;
       color: rgb(44, 44, 44);
     }
-    >h5{
+    > h5 {
       color: rgb(44, 44, 44);
       font-size: 15px;
-      >i{
-          color: #c2451f;
-          font-size: 40px;
+      > i {
+        color: #c2451f;
+        font-size: 40px;
       }
     }
-    >h3{
+    > h3 {
       font-size: 20px;
       border-top: 1px dashed rgb(196, 195, 195);
       border-bottom: 1px dashed rgb(196, 195, 195);
       border-left: 5px solid #d8b89c;
       padding: 30px 20px;
-      &:hover{
+      &:hover {
         border-left: 5px solid#c2451f;
       }
     }
   }
 }
-.border-img{
+.border-img {
   background-color: black;
 }
-.Stylish{
+.Stylish {
   width: 100%;
   height: 400px;
-  background-image: url(../img/download\ \(1\).svg) , url(../img/dotted-bg-1.png);
+  background-image: url(../img/download1.svg), url(../img/dotted-bg-1.png);
   background-color: #111111;
   background-size: cover;
   padding-top: 120px;
-  >*{
+  > * {
     text-align: center;
   }
-  >h4{
+  > h4 {
     color: #d8b89c;
     font-size: 20px;
     padding-bottom: 20px;
   }
-  >h2{
+  > h2 {
     color: white;
     font-weight: bold;
     font-size: 45px;
   }
-  >figure{
+  > figure {
     padding-top: 150px;
-    >img{
+    > img {
       width: 25%;
       height: 470px;
     }
-    >div{
+    > div {
       width: 25%;
       height: 470px;
       background-color: #101010;
       padding: 40px 60px;
-      transition:0.4s;
-      &:nth-of-type(1){
-      &:hover{
-        background-color: rgb(46, 44, 44);
+      transition: 0.4s;
+      &:nth-of-type(1) {
+        &:hover {
+          background-color: rgb(46, 44, 44);
+        }
       }
-    }
-    &:nth-of-type(2){
-      &:hover{
-        background-color: rgb(87, 67, 67);
+      &:nth-of-type(2) {
+        &:hover {
+          background-color: rgb(87, 67, 67);
+        }
       }
-    }
-    &:nth-of-type(3){
-      &:hover{
-        background-color: rgb(46, 44, 44);
+      &:nth-of-type(3) {
+        &:hover {
+          background-color: rgb(46, 44, 44);
+        }
       }
-    }
-    &:nth-of-type(4){
-      &:hover{
-        background-color: rgb(87, 67, 67);
+      &:nth-of-type(4) {
+        &:hover {
+          background-color: rgb(87, 67, 67);
+        }
       }
-    }
-      >*{
+      > * {
         color: white;
         padding-bottom: 30px;
       }
-      >span{
+      > span {
         color: #dfb590;
         font-size: 80px;
       }
-      >h2{
+      > h2 {
         font-size: 30px;
       }
-      >h4{
+      > h4 {
         font-size: 15px;
         padding-bottom: 100px;
       }
-      >a{
+      > a {
         padding: 25px 40px;
         border: 2px solid rgb(180, 177, 177);
         position: relative;
         &:hover {
           &::after {
-              clip-path: polygon(0 0, 150% 0, 100% 100%, 0 100%);
-              background-color: #672B20;
+            clip-path: polygon(0 0, 150% 0, 100% 100%, 0 100%);
+            background-color: #672b20;
           }
         }
         &::after {
           width: 100%;
           height: 100%;
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           left: 0;
-          background-color: #672B20;
+          background-color: #672b20;
           clip-path: polygon(0 0, 0 0, -50% 100%, 0 100%);
-          transition:0.4s;
+          transition: 0.4s;
+        }
       }
     }
-    }
   }
+}
+.meet {
+  width: 100%;
+  height: 500px;
+  border: 2px solid rgb(231, 12, 12);
+  position: relative;
+  z-index: 999;
+  top: 0;
+  left: 0;
 }
