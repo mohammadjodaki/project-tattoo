@@ -76,7 +76,7 @@
           display: flex;
           flex-wrap: wrap;
         }
-        > ul {
+        .drop-menu {
           width: 400px;
           height: fit-content;
           position: absolute;
@@ -98,6 +98,16 @@
               color: white;
               position: relative;
               overflow: hidden;
+              >span{
+                height: 100%;
+                color: white;
+                display: flex;
+                align-items: center;
+                padding-left: 40px;
+                position: absolute;
+                font-weight: bold;
+                font-size: 30px;
+              }
               > img {
                 width: 100%;
                 height: 100%;
@@ -305,11 +315,12 @@
   background-color: black;
 }
 .Stylish {
-  width: 100%;
-  height: 400px;
-  background-image: url(../img/download1.svg), url(../img/dotted-bg-1.png);
+  min-height: 100vh;
+  background-image: url(../img/dotted-bg-1.png) , url(../img/download1.svg) ;
+  background-repeat: repeat-x , no-repeat;
+  background-position: -1250px 0 , top right;
+  background-size: auto ,75%;
   background-color: #111111;
-  background-size: cover;
   padding-top: 120px;
   > * {
     text-align: center;
@@ -372,16 +383,27 @@
         padding-bottom: 100px;
       }
       > a {
-        padding: 25px 40px;
+        display: flex;
+        width: 180px;
+        height: 60px;
         border: 2px solid rgb(180, 177, 177);
         position: relative;
         &:hover {
-          &::after {
+          &::before {
             clip-path: polygon(0 0, 150% 0, 100% 100%, 0 100%);
             background-color: #672b20;
           }
         }
-        &::after {
+        >span{
+          width: 100%;
+          height: 100%;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+        }
+        &::before {
           width: 100%;
           height: 100%;
           content: "";
@@ -395,13 +417,4 @@
       }
     }
   }
-}
-.meet {
-  width: 100%;
-  height: 500px;
-  border: 2px solid rgb(231, 12, 12);
-  position: relative;
-  z-index: 999;
-  top: 0;
-  left: 0;
 }
