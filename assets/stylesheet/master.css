@@ -1,6 +1,6 @@
 @font-face {
   font-family: Courier;
-  src: url(../fonts/arial.ttf) format(truetype);
+  src: url(../fonts/Bevan.ttf) format(truetype);
 }
 .menu-top {
   width: 100%;
@@ -98,7 +98,7 @@
               color: white;
               position: relative;
               overflow: hidden;
-              >span{
+              > span {
                 height: 100%;
                 color: white;
                 display: flex;
@@ -189,7 +189,7 @@
       width: 50%;
       height: fit-content;
       justify-content: space-between;
-      animation: header 30s infinite;
+      animation: header 15s infinite;
       > img {
         width: 312px;
         height: 300px;
@@ -266,11 +266,23 @@
   > figure {
     width: 50%;
     height: 100%;
+    position: relative;
     /* border: 1px solid red; */
     align-items: center;
     justify-content: space-between;
+    > span {
+      color: #964830;
+      font-size: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 55%;
+      left: 40%;
+      animation: icon 2s linear infinite;
+    }
     > img {
-      width: 270px;
+      width: 285px;
       height: 570px;
     }
   }
@@ -311,15 +323,21 @@
     }
   }
 }
+@keyframes icon {
+  100% {
+    transform: perspective(800px) rotate(360deg);
+  }
+}
 .border-img {
+  width: 100%;
   background-color: black;
 }
 .Stylish {
   min-height: 100vh;
-  background-image: url(../img/dotted-bg-1.png) , url(../img/download1.svg) ;
-  background-repeat: repeat-x , no-repeat;
-  background-position: -1250px 0 , top right;
-  background-size: auto ,75%;
+  background-image: url(../img/dotted-bg-1.png), url(../img/download1.svg);
+  background-repeat: repeat-x, no-repeat;
+  background-position: -1250px 0, top right;
+  background-size: auto, 75%;
   background-color: #111111;
   padding-top: 120px;
   > * {
@@ -377,6 +395,7 @@
       }
       > h2 {
         font-size: 30px;
+        height: 85px;
       }
       > h4 {
         font-size: 15px;
@@ -394,7 +413,7 @@
             background-color: #672b20;
           }
         }
-        >span{
+        > span {
           width: 100%;
           height: 100%;
           color: white;
