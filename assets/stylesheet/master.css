@@ -437,3 +437,122 @@
     }
   }
 }
+.Artists{
+  width: 80%;
+  height: fit-content;
+  padding-top: 80px;
+  margin: auto;
+  line-height: 60px;
+  >h4{
+    color: gray;
+    font-size: 23px;
+    text-align: center;
+  }
+  >h2{
+    font-size: 50px;
+    text-align: center;
+  }
+  >figure{
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 50px;
+    transition: 0.6s;
+    &:hover{
+      transform: translateY(-10px);
+    }
+    >img{
+      width: 350px;
+      height: 480px;
+    }
+    >div{
+      width: 65%;
+      height: 480px;
+      box-shadow: 0px 0px 3px #b9b8b8;
+      padding: 40px 60px;
+      >h4{
+        color: #f5a156;
+      }
+      >a{
+        font-weight: bold;
+        &:nth-of-type(1){
+        font-size: 45px;
+          color: black;
+          &:hover{
+            color: #913C2D;
+          }
+        }
+        &:nth-of-type(2){
+          padding: 20px 15px;
+          background-color: #913C2D;
+        }
+      }
+      >p{
+        font-size: 18px;
+        font-weight: bold;
+        border-top: 1px dashed rgb(202, 199, 199);
+        color: rgb(36, 34, 34);
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+.border-img2 {
+  width: 100%;
+  margin-top: 150px;
+  background-color: black;
+}
+.Art {
+  height: 800px;
+  background-image: url(../img/dotted-bg-1.png), url(../img/download1.svg) ,url(../img/floral-section-separator-3.png);
+  background-repeat: repeat-x, no-repeat ,no-repeat;
+  background-position: -1250px 0, top right , bottom;
+  background-size: auto, 95% ,100%;
+  background-color: #111111;
+  padding-top: 40px;
+  justify-content: space-between;
+  >*{
+    color: white;
+    padding: 40px 50px;
+  }
+  >div{
+    width: 65%;
+    height: 100%;
+    >div{
+    >h4{
+      font-size: 25px;
+      color: #e6b285;
+    line-height: 50px;
+    }
+    >h2{
+      font-size: 55px;
+    }
+    }
+    >div{
+      height: 35%;
+      >div{
+        width: 50%;
+        >p{
+          font-size: 20px;
+    line-height: 35px;
+    padding-bottom: 70px;
+        }
+        >a{
+          padding: 25px 35px;
+          background-color: #672b20;
+        }
+      }
+      >div{
+        width: 50%;
+      }
+    }
+  }
+  >figure{
+    width: 35%;
+    height: 520px;
+    /* border: 1px solid rgb(46, 18, 173); */
+    >img{
+      width: 100%;
+      height: 550px;
+    }
+  }
+}
